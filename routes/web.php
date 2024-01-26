@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controlers\PostConroller;
+use App\Http\Controllers\PostController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,4 +19,4 @@ Route::get('/', function () {
 });
 
 Route::get('add-blog-post-form', [PostController::class, 'index']);
-Route::post('store-form', [PostConroller::class, 'store']);
+Route::post('store-form', [PostController::class, 'store']);
